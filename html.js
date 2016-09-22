@@ -1,10 +1,22 @@
 $(function() {
-	var stky      =	$('<div></div>', { addClass: "stky",});	// •tâ³‘S‘Ì
-	var stky_head =	$("<div></div>", { addClass: "stky_head",});					// ƒwƒbƒ_
-	var stky_body =	$("<div></div>", { addClass: "stky_body",});					// –{‘ÌiƒeƒLƒXƒg•\¦/•ÒWj
-	var stky_foot =	$("<div></div>", { addClass: "stky_foot",});					// ƒtƒbƒ^
-	var add_btn =	$("<div></div>", { addClass: "add_btn",});						// [ƒ{ƒ^ƒ“]’Ç‰Á
-	var cls_btn =	$("<div></div>", { addClass: "close_btn",});					// [ƒ{ƒ^ƒ“]Å¬‰»
-	var del_btn =	$("<div></div>", { addClass: "delete_btn",});					// [ƒ{ƒ^ƒ“]íœ
+	var stky      =	$('<div></div>', { addClass: "stky",});	// ä»˜ç®‹å…¨ä½“
+	var stky_head =	$("<div></div>", { addClass: "stky_head",});					// ãƒ˜ãƒƒãƒ€
+	var stky_body =	$("<div></div>", { addClass: "stky_body",});					// æœ¬ä½“ï¼ˆãƒ†ã‚­ã‚¹ãƒˆè¡¨ç¤º/ç·¨é›†ï¼‰
+	var stky_foot =	$("<div></div>", { addClass: "stky_foot",});					// ãƒ•ãƒƒã‚¿
+	var add_btn =	$("<div></div>", { addClass: "add_btn",});						// [ãƒœã‚¿ãƒ³]è¿½åŠ 
+	var cls_btn =	$("<div></div>", { addClass: "close_btn",});					// [ãƒœã‚¿ãƒ³]æœ€å°åŒ–
+	var del_btn =	$("<div></div>", { addClass: "delete_btn",});					// [ãƒœã‚¿ãƒ³]å‰Šé™¤
 	stky.css({'top':'10px','left':'645px'});
+
+	$('body').append(
+		stky
+		.append(stky_head
+			.prepend(add_btn)
+			.append(cls_btn)
+			.append(del_btn)
+		)
+		.append(stky_body)
+		.append(stky_foot)
+	);
+
 });
