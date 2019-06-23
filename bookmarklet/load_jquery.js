@@ -1,5 +1,6 @@
 javascript:(function() { 
   console.log("LOG-START----------");
+  jquery_url = "https://code.jquery.com/jquery-3.1.0.slim.min.js";
 
   if (typeof jQuery == "undefined") {
       console.log("jquery not loaded.");
@@ -11,7 +12,7 @@ javascript:(function() {
 
   var s = document.createElement("script"); 
   s.type = "text/javascript"; 
-  s.src = "https://code.jquery.com/jquery-3.1.0.slim.min.js"; 
+  s.src = jquery_url; 
   console.log(s);
   document.body.appendChild(s);
 
